@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* let palindrome = function(arr) {
+            for(i in arr){
+            res = 0
+            temp = arr[i]
+            while(temp>0){
+                a= temp % 10;
+                res= res*10 + a;
+                temp=parseInt(temp/10)
+            }
+            if(arr[i] == res){
+                console.log(arr[i])
+            }
+            }
+        }
+    palindrome([12121,12332,434,125,545]) 
+
+    // arrow
+
+    let palindrome =(arr)=> {
+        output =[]
+            for(i in arr){
+            res = 0
+            temp = arr[i]
+            while(temp>0){
+                a= temp % 10;
+                res= res*10 + a;
+                temp=parseInt(temp/10)
+            }
+            if(arr[i] == res){
+                output.push(arr[i])
+            }
+            }
+        return output
+        }
+    console.log(palindrome([121,12332,434,125,545])) */
+
+    // IIfe
+
+    ( function(arr) {
+            for(i in arr){
+            res = 0
+            temp = arr[i]
+            while(temp>0){
+                a= temp % 10;
+                res= res*10 + a;
+                temp=parseInt(temp/10)
+            }
+            if(arr[i] == res){
+                console.log(arr[i])
+            }
+            }
+        } ) ([12121,12332,43434,1253,545])
+    </script>
+</body>
+</html>

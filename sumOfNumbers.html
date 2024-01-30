@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // anonymous
+        // let sum_Numbers = function(arr) {
+        //     sum = 0;
+        //     for(i in arr){
+        //         sum=sum+arr[i];
+        //     }
+        //     return sum;
+        // }
+        // console.log(sum_Numbers([1,2,3,4,5]))
+
+        // // arrow
+        let sumOfNumbers = (arr) => {
+             sum = 0;
+             for(i in arr){
+                 sum=sum+arr[i];
+             }
+             return sum;
+         }
+         console.log(sumOfNumbers([11,22,33,44,55]))
+
+        // IIFE
+        ( function(arr1) {
+            sum = 0;
+            for(i in arr1){
+                sum=sum+arr1[i];
+            }
+            console.log(sum);
+        }
+        )([10,20,30,40,50]);
+    </script>
+</body>
+</html>

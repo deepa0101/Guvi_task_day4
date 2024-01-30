@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Anonymous
+        let titleCase = function(input)  {
+            for (i in input){
+                 uppercase = input[i].charAt(0).toUpperCase();
+                 smallcase = input[i].slice(1).toLowerCase()
+                 output = uppercase + smallcase
+                console.log(output)
+            }
+        } 
+        titleCase(["guvi","geek","india"])
+
+        // IIFE
+        ( function(input) {
+            for (i in input){
+                 uppercase = input[i].charAt(0).toUpperCase();
+                 smallcase = input[i].slice(1).toLowerCase()
+                 output = uppercase + smallcase
+                console.log(output)
+            }
+        } 
+        ) (["guvi","geek","india"])
+
+        // arrow
+        let titleCase2 = (input) => {
+            for (i in input){
+                 uppercase = input[i].charAt(0).toUpperCase();
+                 smallcase = input[i].slice(1).toLowerCase()
+                 output = uppercase + smallcase
+                console.log(output)
+            }
+        } 
+        titleCase(["guvi","geek","india"])
+    </script>
+</body>
+</html>
